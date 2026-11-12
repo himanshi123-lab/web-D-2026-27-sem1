@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Room Booking Form</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            text-align: center;
+        }
+
+        .container {
+            width: 325px;
+            margin: 25px auto;
+            padding: 15px;
+            border: 2px solid black;
+            border-top: 5px solid black;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+            margin: 5px 0;
+        }
+
+        input, select {
+            width: 105px;
+        }
+
+        textarea {
+            width: 210px;
+            height: 38px;
+        }
+
+        button {
+            margin-top: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Hotel Room Booking Form</h2>
+
+        <form>
+            <label>Full Name:</label>
+            <input type="text" name="fullname">
+            <br>
+
+            <label>Email:</label>
+            <input type="email" name="email">
+            <br>
+
+            <label>Phone:</label>
+            <input type="tel" name="phone">
+            <br>
+
+            <label>Check-in Date:</label>
+            <input type="date" name="checkin">
+            <br>
+
+            <label>Check-out Date:</label>
+            <input type="date" name="checkout">
+            <br>
+
+            <label>Room Type:</label>
+            <select name="room">
+                <option>Single Room</option>
+                <option>Double Room</option>
+                <option>Deluxe Room</option>
+                <option>Suite Room</option>
+            </select>
+            <br>
+
+            <label>Number of Guests:</label>
+            <input type="number" name="guests" min="1">
+            <br>
+
+            <p>Special Requests:</p>
+
+            <textarea name="requests"></textarea>
+            <br>
+
+            <button type="submit">Book Now</button>
+            <button type="reset">Reset Form</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
